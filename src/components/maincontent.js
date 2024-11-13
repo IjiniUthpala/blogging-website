@@ -62,8 +62,8 @@ function MainContent() {
       <div className="social-section">
         <h4>Blog Writing</h4>
         <div className="card-grid">
-          <Card title="Product description" description="Instantly generate engaging product descriptions that sell" />
           <Card title="Blog writing" description="Generate the best blog post to fit your audience with just a few clicks of a button" />
+          <Card title="Product description" description="Instantly generate engaging product descriptions that sell" />
           <Card title="Article writer" description="Automatically create unique factual articles at the touch of a button" />
           <Card title="Blog writing" description="Generate the best blog post to fit your audience with just a few clicks of a button" />
         </div>
