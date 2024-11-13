@@ -1,0 +1,234 @@
+/* Main content area */
+.main-content {
+    padding: 20px;
+    margin-left: 80px; 
+}
+
+
+.dropdown-container {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.dropdown-wrapper {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.company-dropdown {
+    appearance: none; 
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px #ddd;
+    border-radius: 5px;
+    padding: 5px 30px 5px 5px; 
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.company-dropdown:hover {
+    border-color: #7b61ff;
+}
+
+.dropdown-icon {
+    position: absolute;
+    right: 10px; 
+    pointer-events: none; 
+}
+
+/* Welcome Section */
+.welcome-section {
+    position: relative; 
+    background: linear-gradient(135deg, #f5f7ff, #f3e5f5);
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    min-height: 180px;
+}
+
+
+.welcome-section h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.welcome-section p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+/* Button styles */
+.start-creating-btn {
+    background-color: white;
+    color: #7b61ff;
+    border: 2px solid #7b61ff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    max-width: 200px;
+}
+
+.start-creating-btn:hover {
+    transform: scale(1.05);
+    border-color: #5e4bcc;
+}
+
+/* Flex container for welcome section */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Social Section */
+.social-section {
+    background: #f4f3f6;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Card Grid */
+.card-grid {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+
+.search-bar-container {
+    display: none;
+}
+
+.widgets-icon-container{
+    display: none;
+}
+
+
+.dropdown-container .MuiAvatar-root {
+    display: none;
+}
+
+
+  
+/* Mobile View Styles */
+@media (max-width: 768px) {
+    .start-creating-btn,
+    .additional-info {
+        display: none;
+    }
+
+
+    .dropdown-container .MuiAvatar-root {
+        display: block;
+    }
+
+
+    .search-bar-container {
+        display: block;
+    }
+    
+    
+
+    .welcome-section {
+        background: linear-gradient(135deg, #f5f7ff, #f3e5f5);
+        border-radius: 0 0 60px 40px;
+        padding: 20px;
+        margin: 0;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px;
+        min-height: 250px;
+    }
+
+    .welcome-section h2 {
+        margin-bottom: 40px;
+        
+    }
+
+    .welcome-section p {
+        margin-bottom: 20px;
+        margin-left: 10px; 
+    }
+
+    .main-content h3,
+    .main-content p {
+        text-align: left;
+        margin-left: 10px; 
+        margin-right: auto;
+        width: 90%;
+    }
+
+    .search-bar {
+        width: 90%;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        padding: 5px 10px;
+        margin-top: -26px;
+        z-index: 10;
+        position: relative;
+      }
+      
+
+    .main-content {
+        margin-left: 0;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    /*  dropdown for mobile */
+    .dropdown-container {
+        position: static; 
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0; 
+    }
+
+   /*  Widgets icon a button  */
+    .widgets-icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        border-radius: 8px;
+        background-color: #f0f0f0; 
+        transition: background-color 0.3s, transform 0.3s; 
+    }
+
+    .widgets-icon {
+        color: #000; 
+        font-size: 2.5rem;
+    }
+
+    
+    .widgets-icon-container:hover, 
+    .widgets-icon-container:focus {
+        background-color: #e0e0e0; 
+        transform: scale(1.05); 
+    }
+
+    }

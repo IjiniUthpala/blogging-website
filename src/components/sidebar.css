@@ -1,0 +1,85 @@
+.sidebar {
+    width: 80px; 
+    background-color: #F1EDFD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; 
+    z-index: 10; 
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+  
+  .logo-image {
+    width: 30px; 
+    height: auto; 
+    border-radius: 8px; 
+}  
+  
+.sidebar-icon {
+    margin: 20px 0;
+    color: #5f6368;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.home-icon {
+    margin-top: 30px; 
+    margin-bottom: 40px; 
+}
+
+.sidebar-icon:hover {
+    color: #754DE8;
+}
+
+/* Style for the Home icon when it's the active page */
+.sidebar-icon.active {
+    color: #754DE8; 
+}
+
+.spacer {
+    flex-grow: 1; 
+}
+
+.settings-icon {
+    margin-bottom: 20px; 
+}
+
+.exit-icon {
+    margin-bottom: 100px;
+    margin-top: 40px; 
+}
+
+/* sidebar.css */
+
+.mobile-sidebar-icon {
+    display: none; 
+}
+
+
+@media (max-width: 768px) {
+    .mobile-sidebar-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 10;
+        color: #754DE8;
+        cursor: pointer;
+    }
+    .sidebar {
+        display: none !important; 
+    }
+
+    
+}
+
+

@@ -1,0 +1,40 @@
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+    text-align: left;
+    min-width: 150px;
+    flex: 1 1 0;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+.trending-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+.MuiIconButton-root:hover {
+    background-color: #f1f1f1; 
+}
+
+
+@media (max-width: 768px) {
+    .card {
+      padding: 15px;
+    }
+}

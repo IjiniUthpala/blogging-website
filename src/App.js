@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Sidebar from './components/sidebar';
+import Header from './components/header';
+import MainContent from './components/maincontent';
+import Container from '@mui/material/Container';
 import './App.css';
 
 function App() {
+  const [activePage, setActivePage] = useState("home"); // Track the active page
+
+  // Function to set the active page
+  const handleSetActivePage = (page) => {
+    setActivePage(page);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Sidebar activePage={activePage} setActivePage={handleSetActivePage} />
+      <div className="content">
+        <Header />
+        <Container maxWidth="xl">
+          <MainContent />
+        </Container>
+      </div>
     </div>
   );
 }
 
-export default App;
+export default App; 
